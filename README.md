@@ -30,17 +30,18 @@ CryptoTracker allows users to monitor live cryptocurrency prices and 24-hour cha
 - **Maven**
 
 ---
-
 ## 📂 Project Structure
-src/
- ├── main/
- │   ├── java/
- │   │   ├── controller/   → Handles HTTP requests
- │   │   ├── service/      → Business logic & API integration
- │   │   └── model/        → Domain models
- │   └── resources/
- │       ├── templates/    → Thymeleaf UI templates
- │       └── application.properties → Configuration
+
+src/                         → Project source directory  
+main/                        → Application root  
+java/                        → Java source files  
+controller/                  → Handles HTTP requests  
+service/                     → Business logic & API integration  
+model/                       → Domain models  
+resources/                   → Application resources  
+templates/                   → Thymeleaf UI templates  
+application.properties       → Configuration  
+
 ## ✨ Features
 - Real-time cryptocurrency price tracking  
 - Support for multiple coins in a single search  
