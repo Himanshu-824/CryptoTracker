@@ -1,4 +1,4 @@
-# 📊 CryptoTracker Project
+# 📊 Crypto Tracker Project
 
 A **Java-based Spring Boot web application** to track real-time cryptocurrency prices using public market APIs with a clean, professional UI.
 
