@@ -58,8 +58,10 @@ CryptoTracker allows users to monitor live cryptocurrency prices and 24-hour cha
 - HTML & CSS  
 - Maven  
 ## 📸 Screenshots
-![Home Page](screenshots/home.png)
-![Results Page](screenshots/results.png)
+![Home Page](<img width="1917" height="867" alt="Screenshot 2025-12-17 210319" src="https://github.com/user-attachments/assets/d5e0d296-a833-451f-be03-617f11f2d59d" />
+)
+![Results Page]<img width="1919" height="865" alt="Screenshot 2025-12-17 210337" src="https://github.com/user-attachments/assets/c14737f4-ccba-4f18-9e24-cd5084339641" />
+)
 ## 🤝 Contributing
 Contributions are welcome.
 
