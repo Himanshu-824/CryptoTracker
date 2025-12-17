@@ -32,3 +32,42 @@ CryptoTracker allows users to monitor live cryptocurrency prices and 24-hour cha
 ---
 
 ## 📂 Project Structure
+src/
+ ├── main/
+ │   ├── java/
+ │   │   ├── controller/   → Handles HTTP requests
+ │   │   ├── service/      → Business logic & API integration
+ │   │   └── model/        → Domain models
+ │   └── resources/
+ │       ├── templates/    → Thymeleaf UI templates
+ │       └── application.properties → Configuration
+## ✨ Features
+- Real-time cryptocurrency price tracking  
+- Support for multiple coins in a single search  
+- Displays 24-hour price change  
+- Binance-inspired dark theme UI  
+- Server-side rendering using Thymeleaf  
+- Clean MVC-based Spring Boot architecture
+  ## 🛠️ Technologies Used
+- Java  
+- Spring Boot  
+- Spring MVC  
+- Thymeleaf  
+- REST APIs (CoinGecko)  
+- HTML & CSS  
+- Maven  
+## 📸 Screenshots
+![Home Page](screenshots/home.png)
+![Results Page](screenshots/results.png)
+## 🤝 Contributing
+Contributions are welcome.
+
+1. Fork the repository  
+2. Create a new feature branch  
+3. Commit your changes  
+4. Push the branch  
+5. Open a pull request  
+
+
+
+
