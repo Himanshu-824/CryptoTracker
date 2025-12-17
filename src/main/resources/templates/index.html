@@ -1,16 +1,123 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Crypto Tracker</title>
+    <title>Crypto Tracker | Binance Theme</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0b0e11;
+            font-family: "Inter", "Segoe UI", Arial, sans-serif;
+            color: #eaecef;
+        }
+
+        .card {
+            width: 420px;
+            background: #181a20;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 0 0 1px #2b3139;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 700;
+            color: #f0b90b;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #b7bdc6;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-size: 13px;
+            color: #848e9c;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 14px;
+            background: #0b0e11;
+            border: 1px solid #2b3139;
+            border-radius: 8px;
+            color: #eaecef;
+            font-size: 14px;
+            margin-bottom: 20px;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #5e6673;
+        }
+
+        input:focus {
+            border-color: #f0b90b;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            background: #f0b90b;
+            color: #0b0e11;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        button:hover {
+            background: #f8d12f;
+            transform: translateY(-1px);
+        }
+
+        .hint {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #848e9c;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<div>
-    <h2>Crypto Tracker & Alert</h2>
-    <form action="/track" method="post">
-        <input type="text" name="coins" placeholder="Example: Bitcoin, Solana, Etherium" required>
+
+<div class="card">
+    <div class="logo">CryptoTracker</div>
+    <div class="subtitle">Binance-style Crypto Price Tracker</div>
+
+    <!-- Thymeleaf form -->
+    <form th:action="@{/track}" method="post">
+        <label for="coins">Enter Coin IDs</label>
+        <input
+                id="coins"
+                type="text"
+                name="coins"
+                placeholder="bitcoin, ethereum, dogecoin"
+                required
+        >
         <button type="submit">Track Prices</button>
     </form>
+
+    <div class="hint">
+        Use CoinGecko IDs only (comma separated)
+    </div>
 </div>
 
 </body>

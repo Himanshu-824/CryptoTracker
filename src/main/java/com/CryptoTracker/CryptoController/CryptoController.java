@@ -16,12 +16,8 @@ import java.util.stream.Collectors;
 @Controller
 public class CryptoController {
 
-    private final CryptoService cryptoService;
-
     @Autowired
-    public CryptoController(CryptoService cryptoService) {
-        this.cryptoService = cryptoService;
-    }
+    private CryptoService cryptoService;
 
     @GetMapping("/")
     public String index() {
@@ -33,13 +29,13 @@ public class CryptoController {
 
         List<String> coinList = Arrays.stream(coins.split(","))
                 .map(String::trim)
+                .map(String::toLowerCase)
                 .filter(s -> !s.isEmpty())
                 .collect(Collectors.toList());
 
         List<CryptoCoin> result = cryptoService.getCryptoPrices(coinList);
 
         model.addAttribute("coins", result);
-
         return "result";
     }
 }
