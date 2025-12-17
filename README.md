@@ -50,7 +50,7 @@ CryptoTracker allows users to monitor live cryptocurrency prices and 24-hour cha
 - Server-side rendering using Thymeleaf  
 - Clean MVC-based Spring Boot architecture
 
--   ## 🛠️ Technologies Used
+  ## 🛠️ Technologies Used
 - Java  
 - Spring Boot  
 - Spring MVC  
